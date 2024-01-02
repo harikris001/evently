@@ -58,22 +58,22 @@ export async function POST(req: Request) {
     const {id, email_addresses, image_url, first_name, last_name, username } = evt.data
 
     const user = {
-        clerkId: id,
-        email: email_addresses[0].email_address,
-        username: username!,
-        firstName: first_name,
-        lastName: last_name,
-        photo: image_url
+      clerkId: id,
+      email: email_addresses[0].email_address,
+      username: username!,
+      firstName: first_name,
+      lastName: last_name,
+      photo: image_url
     }
 
     const newUser = await createUser(user)
 
     if(newUser) {
-        await clerkClient.users.updateUserMetadata(id, {
-            publicMetadata: {
-                userId: newUser._id
-            }
-        })
+      await clerkClient.users.updateUserMetadata(id, {
+        publicMetadata: {
+          userId: newUser._id
+        }
+      })
     }
 
     return NextResponse.json({ message: 'OK', user: newUser })
