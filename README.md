@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Evently
 
-## Getting Started
+![Evently-homepage](https://github.com/harikris001/evently/assets/85405666/1a46c264-32d4-434e-94fd-f002140c91df)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Evently is an innovative event management platform built using Next.js and React, aimed at streamlining and simplifying the event creation, ticket booking, and management processes for users. This modern, responsive application offers a user-friendly interface and robust functionalities for both event organizers and attendees.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### User Profile Management
+- Create and manage user profiles to personalize event experiences.
+- Secure login and signup facilitated by Clerk Authentication tool for enhanced security and convenience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Event Management
+- Create Events: Easily create and customize events with detailed information, including date, time, location, description, and more.
+- Edit Events: Modify event details as needed to keep attendees informed and up-to-date.
+- Delete Events: Remove events that are no longer relevant or required.
 
-## Learn More
+### Ticket Booking
+- Streamlined ticket booking system allowing users to reserve and purchase tickets for their chosen events.
 
-To learn more about Next.js, take a look at the following resources:
+### Payment Integration
+- Utilizes Stripe for secure and efficient online payment processing, enabling seamless transactions for event tickets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Image Storage
+- Integrated with UploadThing for storing event-related images and media files online, ensuring a visually appealing event representation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Database Operations
+- Utilizes MongoDB for efficient CRUD (Create, Read, Update, Delete) operations, ensuring robust data management and scalability.
+- Implements webhooks to add clients from Clerk to the MongoDB database, facilitating efficient data synchronization and management.
 
-## Deploy on Vercel
+## Technologies Used
+- Next.js and React for frontend development, API, and webhooks
+- Clerk Authentication Tool
+- MongoDB for database management
+- Stripe for online payments
+- UploadThing for image storage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation and Setup
+1. Clone the repository: `git clone https://github.com/harikris001/evently.git`
+2. Navigate to the project directory: `cd evently`
+3. Install dependencies: `npm install`
+4. Set up environment variables as specified in `.env.local`.
+5. Run the application: `npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribution
+We welcome contributions from the community to enhance Evently. Feel free to fork the repository, create issues, and submit pull requests.
+
+
+
+## Contact
+For any inquiries or support regarding Evently, please reach out.
